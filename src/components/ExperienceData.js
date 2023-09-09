@@ -1,31 +1,28 @@
 import MdevDes from "../assets/mdev-des.svg";
 import KiwiiDes from "../assets/kiwii-des.svg";
-import ArtemisImg from "../assets/artemis.png";
-import KiwiiImg from "../assets/kiwii.png";
-import MdevImg from "../assets/mssdev.png";
+import ArtemisDes from "../assets/artemis-des.svg";
 
 const ExperienceData = [
     {
         title: "Artemis",
         date: "May 2023 – Aug 2023",
-        description: KiwiiDes,
+        description: ArtemisDes,
         showDropDown: false,
-        image: ArtemisImg
+        tools: ["React Native", "Python", "Tailwind CSS", "JavaScript", "MongoDB", "Redis"]
     },
     {
         title: "Kiwii",
         date: "May 2022 – Aug 2022",
         description: KiwiiDes,
         showDropDown: false,
-        image: KiwiiImg
-
+        tools: ["React", "JavaScript", "HTML/CSS", "Firebase", "Figma"]
     },
     {
         title: "Markville App Development",
         date: "Sep 2020 – Aug 2020",
         description: MdevDes,
         showDropDown: false,
-        image: MdevImg
+        tools: ["Java", "Dart", "Flutter", "XCode", "Android Studio"]
     }
 ];
 

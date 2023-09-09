@@ -17,19 +17,24 @@ const Experience = () => {
     return (
         <div className="flex flex-col w-full h-full items-center justify-center">
         <NavBar />
-        <img src = {ExperienceTitle}></img>
-        <div className="flex flex-col w-full gap-4 m-20">
+        <img src = {ExperienceTitle} className="w-3/4 my-20"></img>
+        <div className="flex flex-col w-full">
             {ExperienceData.map((item, index) => (
             <div className = "flex flex-col"> 
-            <div className="flex flex-row border-b border-b-black mx-20 align-center gap-10">
-                <h1 className = "font-sans font-semibold tracking-tighter text-8xl"> {item.title} </h1>
-                <button className = "text-7xl hover:text-[#594E46] hover" onClick={()=> toggleDropDown(index)}><BsFillArrowDownCircleFill/></button>
-            </div>
-                <div className = {`mx-20 flex flex-row transition-all ease-in-out gap-4 ${item.showDropDown? `visible h-[300px]`: `invisible h-[0px]`}`}>
-                    <img className = "w-1/2 rounded-lg p-4" src={item.image} alt=""></img>
-                    <img className = "w-1/2 p-4" src={item.description} alt=""></img>
+                <div className="flex flex-row rounded-lg p-4 border border-black mx-20 align-center gap-10">
+                    <h1 className = "font-sans font-semibold tracking-tighter text-8xl"> {item.title} </h1>
+                    <button className = "mr-0 mx-auto text-3xl border-black border rounded-full px-4 hover:text-[#594E46] my-auto hover" onClick={()=> toggleDropDown(index)}>
+                        {item.showDropDown? <p>CLOSE </p>:<p>OPEN</p>}
+                    </button>
                 </div>
-            </div>
+                <div className = {`mx-20 mt-5 flex flex-col transition-all ease-in-out gap-4 ${item.showDropDown? `visible h-[300px]`: `invisible h-[0px]`}`}>
+                    <div className = "w-full list-none gap-4 flex flex-row">
+                        {(item.tools).map(tool => <li className = "px-4 py-1 border border-black rounded-full"> {tool} </li>)}
+                        <p className="mr-0 ml-auto text-white bg-[#594e46] rounded-full px-4 py-1">{item.date}</p>
+                    </div>
+                    <img className = "w-full p-4" src={item.description} alt=""></img>
+                </div>
+           </div>
             ))}
         </div>
         <Footer />

@@ -20,7 +20,9 @@ import LompTitle from "../assets/lomp-title.svg";
 import BoinkLarge from "../assets/boink-large.png";
 import ChessLarge from "../assets/chess-large.png";
 import LompLarge from "../assets/lomp-large.png";
+import UniGPTLarge from "../assets/uniGPT-large.png";
 import BoinkAbout from "../assets/boink-about.svg";
+import UniGPTAbout from "../assets/uniGPT-about.svg";
 import SpotifyAbout from "../assets/spotify-about.svg";
 import ChessAbout from "../assets/chess-about.svg";
 import MtrailsAbout from "../assets/mtrails-about.svg";
@@ -32,8 +34,8 @@ const ProjectData = [
         image: UniGPTImg,
         description: UniGPTDes,
         titleImg: UniGPTTitle,
-        largeImg: BoinkLarge,
-        about: BoinkAbout,
+        largeImg: UniGPTLarge,
+        about: UniGPTAbout,
 
     },
     {
