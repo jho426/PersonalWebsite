@@ -14,12 +14,12 @@ const Footer = () => {
     <div id = "Footer" className = "w-full h-[400px] flex flex-col">
         <WaveFunction/>
         <div className = "w-full h-full bg-[#131313] mt-[-100px] p-[20px]">
-            <img className = "w-full px-10" alt = "" src={FooterText}></img>
+            <img draggable={false} className = "w-full px-10" alt = "" src={FooterText}></img>
             <div className = "text-[#DFDDD7] flex flex-row mt-10">
                 <p className = "" >© Jacqueline Ho – 2023</p>
                 <div className = "flex flex-row mr-0 ml-auto gap-5">
                     {data.map((link) => (
-                        <a href = {link.link} target="_blank"><p className = "px-5 py-1 border border-[2px] rounded-lg">{link.name}</p></a>
+                        <a href = {link.link} target="_blank"><p className = "px-5 py-1 border border-[1px] rounded-full hover:text-[#939e4f] hover:border-[#939e4f]">{link.name}</p></a>
                     ))}
                 </div>     
             </div>

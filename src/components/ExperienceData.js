@@ -5,21 +5,21 @@ import ArtemisDes from "../assets/artemis-des.svg";
 const ExperienceData = [
     {
         title: "Artemis",
-        date: "May 2023 – Aug 2023",
+        date: "may 2023 – aug 2023",
         description: ArtemisDes,
         showDropDown: false,
         tools: ["React Native", "Python", "Tailwind CSS", "JavaScript", "MongoDB", "Redis"]
     },
     {
         title: "Kiwii",
-        date: "May 2022 – Aug 2022",
+        date: "may 2022 – aug 2022",
         description: KiwiiDes,
         showDropDown: false,
         tools: ["React", "JavaScript", "HTML/CSS", "Firebase", "Figma"]
     },
     {
         title: "Markville App Development",
-        date: "Sep 2020 – Aug 2020",
+        date: "sep 2020 – aug 2022",
         description: MdevDes,
         showDropDown: false,
         tools: ["Java", "Dart", "Flutter", "XCode", "Android Studio"]

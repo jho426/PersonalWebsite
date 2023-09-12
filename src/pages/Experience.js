@@ -17,22 +17,24 @@ const Experience = () => {
     return (
         <div className="flex flex-col w-full h-full items-center justify-center">
         <NavBar />
-        <img src = {ExperienceTitle} className="w-3/4 my-20"></img>
+        <img draggable={false} src = {ExperienceTitle} className="my-10 lg:w-3/4 lg:my-20"></img>
         <div className="flex flex-col w-full">
             {ExperienceData.map((item, index) => (
             <div className = "flex flex-col"> 
                 <div className="flex flex-row rounded-lg p-4 border border-black mx-20 align-center gap-10">
-                    <h1 className = "font-sans font-semibold tracking-tighter text-8xl"> {item.title} </h1>
+                    <div>
+                        <h1 className = "font-sans font-semibold tracking-tighter text-8xl"> {item.title} </h1>
+                        <p className="">{item.date}</p>
+                    </div>
                     <button className = "mr-0 mx-auto text-3xl border-black border rounded-full px-4 hover:text-[#594E46] my-auto hover" onClick={()=> toggleDropDown(index)}>
                         {item.showDropDown? <p>CLOSE </p>:<p>OPEN</p>}
                     </button>
                 </div>
-                <div className = {`mx-20 mt-5 flex flex-col transition-all ease-in-out gap-4 ${item.showDropDown? `visible h-[300px]`: `invisible h-[0px]`}`}>
+                <div className = {`mx-20 mt-5 flex flex-col transition-all duration-700 ease-in-out gap-4 overflow-y-hidden ${item.showDropDown? `h-[300px]`: `h-[0px]`}`}>
                     <div className = "w-full list-none gap-4 flex flex-row">
                         {(item.tools).map(tool => <li className = "px-4 py-1 border border-black rounded-full"> {tool} </li>)}
-                        <p className="mr-0 ml-auto text-white bg-[#594e46] rounded-full px-4 py-1">{item.date}</p>
                     </div>
-                    <img className = "w-full p-4" src={item.description} alt=""></img>
+                    <img draggable={false} className = "w-full p-4" src={item.description} alt=""></img>
                 </div>
            </div>
             ))}

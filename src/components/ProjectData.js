@@ -18,9 +18,11 @@ import MtrailsTitle from "../assets/mtrails-title.svg";
 import BoinkTitle from "../assets/boink-title.svg";
 import LompTitle from "../assets/lomp-title.svg";
 import BoinkLarge from "../assets/boink-large.png";
+import MtrailsLarge from "../assets/mtrails-large.png";
 import ChessLarge from "../assets/chess-large.png";
 import LompLarge from "../assets/lomp-large.png";
 import UniGPTLarge from "../assets/uniGPT-large.png";
+import SpotifyLarge from "../assets/spotify-large.png";
 import BoinkAbout from "../assets/boink-about.svg";
 import UniGPTAbout from "../assets/uniGPT-about.svg";
 import SpotifyAbout from "../assets/spotify-about.svg";
@@ -36,15 +38,18 @@ const ProjectData = [
         titleImg: UniGPTTitle,
         largeImg: UniGPTLarge,
         about: UniGPTAbout,
-
+        tools: ["react.js", "javascript", "tailwind css", "mui", "langchain", "pinecone", "node.js", "heroku", "gpt3", "express.js" ],
+        links: [{"name": "GITHUB", "link": "https://github.com/jho426/UniGPT"}, {"name": "SITE", "link": "https://universitygpt-43101.web.app/"}, {"name": "API", "link": "https://unigpt-c074044c0e9d.herokuapp.com/"}]
     },
     {
         title: "SPOTIFY FRIENDS",
         image: SpotifyImg,
         description: SpotifyDes,
         titleImg: SpotifyTitle,
-        largeImg: BoinkLarge,
-        about: SpotifyAbout
+        largeImg: SpotifyLarge,
+        about: SpotifyAbout,
+        tools: ["react native", "javascript", "typescript", "spotify api", "xcode"],
+        links: [{"name": "GITHUB", "link": "https://github.com/jho426/SpotifyFriends"}, {"name": "APP STORE", "link": "https://apps.apple.com/ca/app/listening-activity-for-spotify/id6451445133"}]
     },
     {
         title: "CHESS",
@@ -52,16 +57,19 @@ const ProjectData = [
         description: ChessDes,
         titleImg: ChessTitle,
         largeImg: ChessLarge,
-        about: ChessAbout
-
+        about: ChessAbout,
+        tools: ["java", "photoshop"],
+        links: [{"name": "GITHUB", "link": "https://github.com/jho426/Chess"}]
     },
     {
         title: "MARKHAM TRAILS",
         image: MtrailsImg,
         description: MtrailsDes,
         titleImg: MtrailsTitle,
-        largeImg: BoinkLarge,
-        about: MtrailsAbout
+        largeImg: MtrailsLarge,
+        about: MtrailsAbout,
+        tools: ["flutter", "dart", "xcode"],
+        links: [{"name": "APP STORE", "link": "https://apps.apple.com/ca/app/markham-trails/id1640993603"}]
     },
     {
         title: "BOINK",
@@ -69,7 +77,9 @@ const ProjectData = [
         description: BoinkDes,
         titleImg: BoinkTitle,
         largeImg: BoinkLarge,
-        about: BoinkAbout
+        about: BoinkAbout,
+        tools: ["unity", "c#", "figma"],
+        links: [{"name": "APP STORE", "link": "https://apps.apple.com/ca/app/bo-nk/id1570376501"}, {"name": "WEBSITE", "link": "https://markville.dev/boinksite/"}]
     },
     {
         title: "LEGENDS OF MATH PRODIGY",
@@ -77,7 +87,9 @@ const ProjectData = [
         description: LompDes,
         titleImg: LompTitle,
         largeImg: LompLarge,
-        about: LompAbout
+        about: LompAbout,
+        tools: ["java", "photoshop"],
+        links: [{"name": "GITHUB"}, {"link": "https://github.com/jho426/LegendsOfMathProdigy"}]
     }
 ];
 

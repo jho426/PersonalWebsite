@@ -11,10 +11,10 @@ const About = () => {
         <div className = "flex flex-col w-full h-full items-center justify-center">
             <NavBar/>
             <div className = "flex flex-row w-full gap-10 my-10">
-                <img alt = "" className = "flex w-1/3 justify-center" src = {PersonalImg}/>
+                <img draggable={false} alt = "" className = "flex w-1/3 justify-center" src = {PersonalImg}/>
                 <div className="flex flex-col w-2/3 justify-center items-center gap-4 p-10">
-                    <img alt = "" className = "w-90" src = {AboutTitle}/>
-                    <img alt = "" className = "w-90" src = {AboutDescription}/>
+                    <img draggable={false} alt = "" className = "w-90" src = {AboutTitle}/>
+                    <img draggable={false} alt = "" className = "w-90" src = {AboutDescription}/>
                 </div>
             </div>
             <Skills/>
