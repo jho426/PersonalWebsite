@@ -66,7 +66,7 @@ const Experience = () => {
                 </div>
                 <div
                   className={`mx-auto mt-5 w-5/6 flex flex-col transition-all duration-700 ease-in-out gap-4 overflow-y-hidden ${
-                    item.showDropDown ? `h-[300px]` : `h-[0px]`
+                    item.showDropDown ? `h-[500px] md:h-[350px]` : `h-[0px]`
                   }`}
                 >
                   <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 list-none gap-4 flex flex-row">
@@ -79,10 +79,21 @@ const Experience = () => {
                   </div>
                   <img
                     draggable={false}
-                    className="w-full p-4"
+                    className="w-full h-0 invisible md:visible md:h-full md:p-4"
                     src={item.description}
                     alt=""
                   ></img>
+                  <img
+                    draggable={false}
+                    className="h-4/6 px-2 mx-auto visible md:invisible md:h-0"
+                    src={item.media}
+                    alt=""
+                  ></img>
+                  <a href={item.link} target="_blank">
+                    <div className="mx-4 mb-10 border border-black w-[100px] text-center rounded-full text-md hover:underline">
+                      WEBSITE
+                    </div>
+                  </a>
                 </div>
               </div>
             ))}
