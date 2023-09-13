@@ -58,8 +58,13 @@ const NavBar = ({menuOpen, setMenuOpen}) => {
       </div>
         <div className={`bg-[#131313] h-screen w-screen absolute md:invisible ${menuOpen? `visible` : `invisible`}`}>
           <div className="absolute md:invisible right-6 grid max-cols-1 top-16 gap-3">
-            {menuOpen && data.map((section) => (
-              <button className="flex justify-end menu-slide-item" onClick={() => navigate(`/${section.section}`)}>
+            <button className="flex justify-end menu-slide-item" onClick={() => {navigate(`/`); setMenuOpen(false);}}>
+              <a className="menu-slide-item">
+                home
+              </a>
+            </button>
+           {menuOpen && data.map((section) => (
+              <button className="flex justify-end menu-slide-item" onClick={() => {navigate(`/${section.section}`); setMenuOpen(false);}}>
                 <a className="menu-slide-item">
                   {(section.section).toLowerCase()}
                 </a>

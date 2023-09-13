@@ -19,13 +19,13 @@ const Skills = () => {
     ]
     return (
         <div className = "flex flex-col w-full h-full">
-            <div className = "mt-1 mx-auto0">
-                <BannerScroll/>
+            <BannerScroll/>
+            <div className = "mt-1 mx-auto">
                 <p className = "w-[200px] my-10 ml-[40px]" >A GALLERY ✦ OF MY TECHNICAL SKILLS</p>
-                <div className = "flex w-full gap-10 my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-10 mx-auto items-center justify-center">
+                <div className = "flex w-full gap-10 my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto self-center items-center justify-center">
                     {skills.map((item) => (
-                        <div className = "bg-[#252526] hover:bg-[#594E46] w-[200px] md:w-[250px] lg:w-[250px] h-[200px] rounded-lg text-[#f5f4eb] p-5 text-sm">
-                            <h1>{item.skill}</h1>
+                        <div className = "bg-[#252526] hover:bg-[#594E46] w-[150px] md:w-[250px] lg:w-[250px] h-[220px] rounded-lg text-[#f5f4eb] p-5 text-sm">
+                            <h1 className = "font-bold">{item.skill}</h1>
                             <p>{item.blurb}</p>
                         </div>
                     ))}
