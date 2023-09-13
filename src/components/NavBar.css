@@ -1,0 +1,27 @@
+@keyframes slide-up {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-slide-item {
+    animation-name: slide-up;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    color: white
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

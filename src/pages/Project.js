@@ -27,11 +27,11 @@ const Project = ({}) => {
                         {hoveredNext? <p>NEXT: {nextProjectItem.title} ✦</p> : <p>NEXT: {nextProjectItem.title} ⟡</p>}
                     </button>
                 </div>
-                <div className = "w-3/4 mx-auto">
+                <div className = "w-5/6 mx-auto">
                     <div className = "w-full mx-auto border-b-black border-b-[2px] py-5">
                         <img draggable={false} className ="w-3/4" src={projectItem.titleImg}></img>
                     </div>
-                    <div className = "flex flex-row gap-4 mx-auto my-5">
+                    <div className = "w-full text-center flex grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 mx-auto my-5">
                         {(projectItem.tools).map((item, index) => (
                             <div className = "border px-2 border-black rounded-full">{item}</div>
                         ))}
@@ -39,9 +39,12 @@ const Project = ({}) => {
                     <motion.div className = "w-full flex justify-center mb-5 mx-auto" initial= {{width:"30%"}}  animate= {{width:"90%"}} transition={transition}>
                         <motion.img className = "rounded-lg border-black border-[2px]" src={projectItem.largeImg} draggable="false"/>
                     </motion.div>
-                    <div className="w-full mx-auto flex">
+                    <div className="flex invisible h-0 md:h-full md:visible lg:visible w-5/6 mx-auto">
                         <img draggable={false} className="" src={projectItem.about}></img>
                     </div>
+                    <div className = "flex visible md:invisible md:h-[0px] lg:invisible w-5/6 mx-auto">
+                        <img draggable={false} key={index} alt="" src={projectItem.mediaDescription} className = ""/>
+                     </div>
                     <div className="w-full gap-4 flex flex-row my-5 border-y border-black border-y-[2px] py-5">
                         {(projectItem.links).map((item, index) => (
                             <a href = {item.link} target="_blank">
