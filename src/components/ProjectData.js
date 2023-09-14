@@ -43,7 +43,7 @@ const ProjectData = [
         titleImg: UniGPTTitle,
         largeImg: UniGPTLarge,
         about: UniGPTAbout,
-        tools: ["react.js", "javascript", "tailwind css", "mui", "langchain", "pinecone", "node.js", "heroku", "gpt3", "express.js" ],
+        tools: ["react.js", "javascript", "tailwind", "mui", "langchain", "pinecone", "node.js", "heroku", "gpt3", "express.js" ],
         links: [{"name": "GITHUB", "link": "https://github.com/jho426/UniGPT"}, {"name": "SITE", "link": "https://universitygpt-43101.web.app/"}, {"name": "API", "link": "https://unigpt-c074044c0e9d.herokuapp.com/"}],
         mediaDescription: UniGPTMedia
     },

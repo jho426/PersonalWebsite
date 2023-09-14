@@ -28,7 +28,7 @@ const About = () => {
   });
 
   return (
-    <div className="flex flex-col w-full h-full items-center justify-center">
+    <div className="flex flex-col w-screen h-screen items-center overflow-x-hidden">
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {(!menuOpen || windowWidth > 768) && (
         <>

@@ -15,7 +15,7 @@ const Footer = () => {
     <div id = "Footer" className = "w-full h-[400px] flex flex-col">
         <WaveFunction/>
         <div className = "w-full h-full bg-[#131313] mt-[-100px] p-[20px]">
-            <img draggable={false} className = "w-full md:px-10" alt = "" src={FooterText}></img>
+            <img draggable={false} className = "w-full md:w-5/6 mx-auto md:px-10" alt = "" src={FooterText}></img>
             <div className = "text-[#A09E9E] flex flex-row mt-10">
                 <p className = "text-[#A09E9E] tracking-tighter text-md my-auto" >© Jacqueline Ho – 2023</p>
                 <div className = "flex flex-row mr-0 ml-auto gap-2 md:gap-5 lg:gap-5">

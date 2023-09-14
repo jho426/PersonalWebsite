@@ -18,7 +18,7 @@ const Skills = () => {
 
     ]
     return (
-        <div className = "flex flex-col w-full h-full">
+        <div className = "flex flex-col w-full">
             <BannerScroll/>
             <div className = "mt-1 mx-auto">
                 <p className = "w-[200px] my-10 ml-[40px]" >A GALLERY ✦ OF MY TECHNICAL SKILLS</p>

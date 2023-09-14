@@ -30,7 +30,7 @@ const Projects = () => {
   });
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col w-screen h-screen overflow-x-hidden">
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {(!menuOpen || windowWidth > 768) && (
         <>

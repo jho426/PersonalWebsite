@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import BannerImg from "../assets/banner.svg";
 import WelcomeImg from "../assets/welcome.svg";
+import "../index.css"
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,7 +27,7 @@ const Home = () => {
   });
 
   return (
-    <div className="flex flex-col w-full h-full items-center justify-center">
+    <div className="flex flex-col w-screen h-screen items-center overflow-x-hidden">
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {(!menuOpen || windowWidth > 768) && (
         <>

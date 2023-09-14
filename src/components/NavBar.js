@@ -16,7 +16,7 @@ const NavBar = ({menuOpen, setMenuOpen}) => {
   ];
 
   return (
-    <div id="NavBar" className={`flex flex-row w-full h-full`}>
+    <div id="NavBar" className={`flex flex-row w-full`}>
       <div className={`w-full flex flex-row justify-between mt-5`}>
         <div className="ml-5">
           <button onClick={() => navigate(`/`)}>
