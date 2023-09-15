@@ -65,7 +65,7 @@ const NavBar = ({menuOpen, setMenuOpen}) => {
             </button>
            {menuOpen && data.map((section) => (
               <button className="flex justify-end menu-slide-item" onClick={() => {navigate(`/${section.section}`); setMenuOpen(false);}}>
-                <a className="menu-slide-item">
+                <a className="menu-slide-item hover:underline">
                   {(section.section).toLowerCase()}
                 </a>
               </button>
