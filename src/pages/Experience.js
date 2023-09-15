@@ -66,7 +66,7 @@ const Experience = () => {
                 </div>
                 <div
                   className={`mx-auto mt-5 w-5/6 flex flex-col transition-all duration-700 ease-in-out gap-4 overflow-y-hidden ${
-                    item.showDropDown ? `h-[500px] md:h-[400px]` : `h-[0px]`
+                    item.showDropDown ? `h-[700px] md:h-[400px]` : `h-[0px]`
                   }`}
                 >
                   <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 list-none gap-4 flex flex-row">
