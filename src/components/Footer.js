@@ -12,9 +12,9 @@ const Footer = () => {
 
 
     return (
-    <div id = "Footer" className = "w-full h-[400px] flex flex-col">
+    <div id = "Footer" className = "w-full h-1/4 md:h-1/3 mb-0 mt-auto">
         <WaveFunction/>
-        <div className = "w-full h-full bg-[#131313] mt-[-100px] p-[20px]">
+        <div className = "w-full  h-full bg-[#131313] mt-[-20px] p-[20px]">
             <img draggable={false} className = "w-full md:w-5/6 mx-auto md:px-10" alt = "" src={FooterText}></img>
             <div className = "text-[#A09E9E] flex flex-row mt-10">
                 <p className = "text-[#A09E9E] tracking-tighter text-md my-auto" >© Jacqueline Ho – 2023</p>

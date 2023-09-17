@@ -3,7 +3,7 @@ import Wave from "react-wavify";
 
 const WaveFunction = () => {
   return (
-    <div className="w-full h-full">
+    <div className="">
       <Wave
         fill="#131313"
         paused={false}

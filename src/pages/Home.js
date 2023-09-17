@@ -27,11 +27,11 @@ const Home = () => {
   });
 
   return (
-    <div className="flex flex-col w-screen h-screen items-center overflow-x-hidden">
+    <div className="flex flex-col w-full h-[100vh] items-center overflow-x-hidden">
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {(!menuOpen || windowWidth > 768) && (
         <>
-          <div className="flex flex-col w-full m-10 items-center mt-20 justify-center gap-10">
+          <div className="flex flex-col w-full mt-40 md:mt-10 items-center justify-center gap-10">
             <img
               className="w-5/6 lg:w-1/2"
               src={BannerImg}
@@ -45,9 +45,9 @@ const Home = () => {
               draggable="false"
             />
           </div>
-          <Footer />
         </>
       )}
+      <Footer />
     </div>
   );
 };
