@@ -34,13 +34,13 @@ const Home = () => {
         <>
           <div className="flex flex-col w-full my-auto items-center justify-center gap-10">
             <img
-              className="flex w-4/6 md:w-1/2 lg:w-1/2"
+              className="flex w-[400px] md:w-[700px] lg:w-[750px]"
               src={BannerImg}
               alt=""
               draggable="false"
             />
             <img
-              className="w-1/3 md:w-1/4 lg:w-1/5"
+              className="w-[230px] md:w-[300px] lg:w-1/5"
               src={WelcomeImg}
               alt=""
               draggable="false"
