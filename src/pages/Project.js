@@ -46,7 +46,7 @@ const Project = ({}) => {
                         <img draggable={false} key={index} alt="" src={projectItem.mediaDescription} className = ""/>
                      </div>
                     <div className="w-full gap-4 flex flex-row my-5 border-y border-black border-y-[2px] py-5">
-                        {(projectItem.links).map((item, index) => (
+                        {(projectItem.links).map((item) => (
                             <a href = {item.link} target="_blank">
                                 <div className = "px-2 flex flex-row hover:underline">{item.name}</div>
                             </a>

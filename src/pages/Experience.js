@@ -66,21 +66,21 @@ const Experience = () => {
                 </div>
                 <div
                   className={`mx-auto mt-5 w-5/6 flex flex-col transition-all duration-700 ease-in-out gap-4 overflow-y-hidden ${
-                    item.showDropDown ? `h-[500px] md:h-[460px] lg:h-[365px]` : `h-[0px]`
+                    item.showDropDown ? `h-[450px] md:h-[460px] lg:h-[350px]` : `h-[0px]`
                   }`}
                 >
                   <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 list-none gap-4 flex flex-row">
                     {item.tools.map((tool) => (
-                      <li className="text-center py-1 border border-black rounded-full">
+                      <li className="text-center text-xs md:text-lg py-1 px-1 border border-black rounded-full">
                         {" "}
                         {tool}{" "}
                       </li>
                     ))}
                   </div>
-                  <p className ="tracking-tighter text-xl md:text-2xl">{item.description}</p>
+                  <p className ="tracking-tighter text-md md:text-2xl">{item.description}</p>
                   <div className = "flex flex-col list-disc w-full"> 
                   {item.descriptionText.map((des) => (
-                    <li className="tracking-tighter text-xl md:text-2xl">
+                    <li className="tracking-tighter text-md md:text-2xl">
                       {des}
                     </li>
                   ))}

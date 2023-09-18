@@ -34,7 +34,7 @@ const Home = () => {
         <>
           <div className="flex flex-col w-full my-auto items-center justify-center gap-10">
             <img
-              className="flex w-[400px] md:w-[700px] lg:w-[750px]"
+              className="flex px-4 w-[400px] md:w-[700px] lg:w-[750px]"
               src={BannerImg}
               alt=""
               draggable="false"

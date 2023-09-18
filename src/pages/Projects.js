@@ -34,7 +34,7 @@ const Projects = () => {
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {(!menuOpen || windowWidth > 768) && (
         <>
-      <img draggable={false} alt="" className="lg:ml-20 lg:w-1/2 mx-auto md:w-3/4 md:px-auto" src={ProjectsTitle}></img>
+      <img draggable={false} alt="" className="w-5/6 mt-8 lg:ml-20 lg:w-1/2 mx-auto md:w-3/4 md:px-auto" src={ProjectsTitle}></img>
       <div className="flex flex-col w-[90%] mx-auto p-10 lg:gap-x-20 lg:my-10 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 items-center justify-center border-t border-t-black border-t-[2px]">
         {ProjectData.map((item, index) => (
           <div className = "flex flex-col h-[490px]">
