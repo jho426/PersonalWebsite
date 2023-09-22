@@ -23,16 +23,17 @@ const Skills = () => {
         <div className = "flex flex-col w-full">
             <BannerScroll/>
             <div className = "mt-1 mx-auto">
-                <p className = "w-[200px] my-10 ml-[40px]" >A GALLERY ✦ OF MY TECHNICAL SKILLS</p>
+                <p className = "w-[220px] my-10 tracking-tighter text-lg md:text-2xl" >A GALLERY ✦ OF MY TECHNICAL SKILLS</p>
                 <div className = "flex w-full gap-10  my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto self-center items-center justify-center">
                     {skills.map((item) => (
-                        <div className = "bg-[#252526] flex flex-col gap-2 hover:bg-[#594E46] tracking-tighter text-xs md:text-sm w-[150px] md:w-[250px] lg:w-[250px] h-[150px] rounded-lg text-[#f5f4eb] p-5 text-sm">
+                        <div className = "bg-[#252526] flex flex-col gap-2 hover:bg-[#594E46] tracking-tighter text-xs md:text-sm w-[150px] md:w-[250px] lg:w-[250px] h-[160px] rounded-lg text-[#f5f4eb] p-5">
                             <h1 className = "font-bold">{item.skill}</h1>
                             <p>{item.blurb}</p>
                         </div>
                     ))}
                 </div>
             </div>
+            <BannerScroll/>
         </div>
     );
 }

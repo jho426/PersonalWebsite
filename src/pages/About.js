@@ -3,9 +3,9 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import PersonalImg from "../assets/personal-img.png";
-import MoreAboutTitle from "../assets/more-about-title.svg";
+import FavouriteTitle from "../assets/favourites-title.svg";
 import AboutTitle from "../assets/about-title.svg";
-
+import AboutMeData from "../components/AboutMeData";
 const About = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,10 +41,37 @@ const About = () => {
             />
             <div className="flex flex-col mx-auto md:w-2/3 lg:w-2/3 justify-center items-center gap-4 p-10">
               <img draggable={false} alt="" className="w-90" src={AboutTitle} />
-              <p className="tracking-tighter leading-7 md:leading-6 w-[90%] text-2xl md:text-3xl">Hey! I'm Jacqueline (she/her) and I'm currently a Software Engineering student at the University of Waterloo.<br/><br/>I'm an aspiring software developer with a passion for building meaningful products through creativity and experience.<br/><br/>I love exploring the connection between design & technology and I'm always seeking new ways to grow my potential!</p>
+              <p className="tracking-tighter leading-7 md:leading-6 w-[90%] text-2xl md:text-3xl">
+                Hey! I'm Jacqueline (she/her) and I'm currently a Software
+                Engineering student at the University of Waterloo.
+                <br />
+                <br /> ✧*･ﾟ I'm an aspiring software developer with a passion
+                for building meaningful products through creativity and
+                experience.
+                <br />
+                <br />I love exploring the connection between design &
+                technology and I'm always seeking new ways to grow my potential!
+              </p>
             </div>
           </div>
-          <Skills /> 
+          <Skills />
+          <div className="w-full rounded-3xl tracking-tighter mt-20">
+          <img alt="" src={FavouriteTitle} className="w-4/5 ml-5 md:ml-20 md:w-1/2"></img>
+          <p className="w-5/6 text-xl leading-5 md:text-2xl ml-5 md:ml-20 ">
+              When i'm not studying or coding away on my computer, you can find
+              me indulging in some of my favourites below! ･ﾟ✧
+            </p>
+          <div className="w-[90%] flex gap-5 flex-col mx-auto border border-2 py-5 my-5 rounded-3xl border-black">
+            {AboutMeData.map((item) => (
+                <div className="flex w-5/6 gap-4 mx-auto text-xl leading-5 md:text-2xl text-black flex-row tracking-tighter">
+                  <h1 className="font-bold">{item.category}:</h1>
+                  {(item.data).map((listItem) => (
+                      <p>{listItem}</p>
+                  ))}
+                </div>
+              ))}
+          </div>
+          </div>
           <Footer />
         </>
       )}
