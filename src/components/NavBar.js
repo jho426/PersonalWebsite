@@ -107,13 +107,13 @@ const NavBar = ({ menuOpen, setMenuOpen, darkMode, setDarkMode }) => {
             ))}
         </div>
       </div>
-      <button onMouseEnter={() => setHoveredMode(true)} onMouseLeave={()=> setHoveredMode(false)} className = "m-5 text-[22px]" onClick={()=> setDarkMode(!darkMode)}>
+      {/* <button onMouseEnter={() => setHoveredMode(true)} onMouseLeave={()=> setHoveredMode(false)} className = "m-5 text-[22px]" onClick={()=> setDarkMode(!darkMode)}>
         {darkMode? 
           (hoveredMode ? <BsMoonStarsFill/> :  <BsMoonStars/>)
           : 
           (hoveredMode ? <BsSunFill/> :  <BsSun/>)
         }
-      </button>
+      </button> */}
     </div>
   );
 };
