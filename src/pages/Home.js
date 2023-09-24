@@ -5,7 +5,7 @@ import BannerImg from "../assets/banner.svg";
 import WelcomeImg from "../assets/welcome.svg";
 import "../index.css"
 
-const Home = () => {
+const Home = ({darkMode, setDarkMode}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <>
     <div className="flex flex-col w-full h-[70vh] md:h-screen lg:h-screen items-center overflow-x-hidden">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode}/>
       {(!menuOpen || windowWidth > 768) && (
         <>
           <div className="flex flex-col w-full my-auto items-center justify-center gap-10">

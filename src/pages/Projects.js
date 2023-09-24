@@ -5,7 +5,7 @@ import ProjectData from "../components/ProjectData";
 import ProjectsTitle from "../assets/projects-title.svg";
 import { useNavigate, useParams } from "react-router-dom";
 
-const Projects = () => {
+const Projects = ({darkMode, setDarkMode}) => {
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col w-screen h-screen overflow-x-hidden">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode}/>
       {(!menuOpen || windowWidth > 768) && (
         <>
       <img draggable={false} alt="" className="w-5/6 mt-8 lg:ml-20 lg:w-1/2 mx-auto md:w-3/4 md:px-auto" src={ProjectsTitle}></img>

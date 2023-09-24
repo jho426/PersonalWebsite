@@ -6,7 +6,7 @@ import PersonalImg from "../assets/personal-img.png";
 import FavouriteTitle from "../assets/favourites-title.svg";
 import AboutTitle from "../assets/about-title.svg";
 import AboutMeData from "../components/AboutMeData";
-const About = () => {
+const About = ({darkMode, setDarkMode}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <div className="flex flex-col w-screen h-screen items-center overflow-x-hidden">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode}/>
       {(!menuOpen || windowWidth > 768) && (
         <>
           <div className="flex flex-col md:flex-row lg:flex-row w-full sm:gap-5 md:gap-10 lg:gap-10 my-10">

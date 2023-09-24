@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import ExperienceData from "../components/ExperienceData";
 import ExperienceTitle from "../assets/experience-title.svg";
 
-const Experience = () => {
+const Experience = ({darkMode, setDarkMode}) => {
   const [experienceData, setExperienceData] = useState(ExperienceData);
 
   const toggleDropDown = (index) => {
@@ -36,7 +36,7 @@ const Experience = () => {
 
   return (
     <div className="flex flex-col w-screen h-screen items-center overflow-x-hidden">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} darkMode={darkMode} setDarkMode={setDarkMode}/>
       {(!menuOpen || windowWidth > 768) && (
         <>
           <img

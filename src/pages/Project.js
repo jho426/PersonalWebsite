@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Footer from "../components/Footer";
 import {motion} from "framer-motion";
 
-const Project = ({}) => {
+const Project = ({darkMode, setDarkMode}) => {
     const navigate = useNavigate();
     const { projectTitle } = useParams()
     const projectItem = ProjectData.find((p) => p.title === projectTitle);

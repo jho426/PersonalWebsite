@@ -14,7 +14,7 @@ const AboutMeData = [
     },
     {
         category: "Hobbies",
-        data: ["Thrifting, Cafe-hopping, Scrolling endlessly on Pinterest"]
+        data: ["Thrifting, Cafe-hopping, Trying out new Recipes"]
     }
 
 
