@@ -6,7 +6,7 @@ const AboutMeData = [
     },
     {
         category: "Food",
-        data: ["Kimchi Friend Rice"]
+        data: ["Kimchi Fried Rice"]
     },
     {
         category: "TV shows",
