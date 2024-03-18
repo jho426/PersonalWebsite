@@ -2,7 +2,7 @@
 const AboutMeData = [
     {
         category: "Artists",
-        data: ["Gracie Abrams, Taylor Swift, NIKI, Olivia Rodrigo, Lennon Stella, Phoebe Bridgers, Lorde, Joji"]
+        data: ["Gracie Abrams, Taylor Swift, NIKI, Olivia Rodrigo, Lennon Stella, Phoebe Bridgers, Lorde"]
     },
     {
         category: "Food",
@@ -10,7 +10,7 @@ const AboutMeData = [
     },
     {
         category: "TV shows",
-        data: ["Grey's Anatomy, Queen's Gambit, Criminal Minds"]
+        data: ["Modern Family, Grey's Anatomy, Queen's Gambit, Criminal Minds"]
     },
     {
         category: "Hobbies",
