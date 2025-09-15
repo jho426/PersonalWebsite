@@ -37,15 +37,15 @@ const Projects = ({darkMode, setDarkMode}) => {
       <img draggable={false} alt="" className="w-5/6 mt-8 lg:ml-20 lg:w-1/2 mx-auto md:w-3/4 md:px-auto" src={ProjectsTitle}></img>
       <div className="flex flex-col w-[90%] mx-auto p-10 lg:gap-x-20 lg:my-10 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 items-center justify-center border-t border-t-black border-t-[2px]">
         {ProjectData.map((item, index) => (
-          <div className = "flex flex-col h-[490px]">
-              <div className = "w-[280px] mb-3"><p>NO. {index} – {item.title}</p></div>
-                <button className = "w-[280px] h-[350px] border-black border-[1px] rounded-lg overflow-hidden" onClick={()=>navigate(`/PROJECTS/${item.title}`)}>
-                  <img draggable={false} key={index} alt="" src={item.image} className = "hover:scale-110 object-cover w-full h-full ease-in-out transition-all duration-200"/>
-                </button>
-              <div className = "w-[280px] h-[50px] mt-2">
-                <img draggable={false} key={index} alt="" src={item.description} className = ""/>
-              </div>
-          </div>
+            <div className = "flex flex-col h-[490px]">
+                <div className = "w-[280px] mb-3"><p>NO. {index} – {item.title}</p></div>
+                  <button className = "w-[280px] h-[350px] border-black border-[1px] rounded-lg overflow-hidden" onClick={()=>navigate(`/PROJECTS/${item.title}`)}>
+                    <img draggable={false} key={index} alt="" src={item.image} className = "hover:scale-110 object-cover w-full h-full ease-in-out transition-all duration-200"/>
+                  </button>
+                <div className = "w-[280px] h-[50px] mt-2">
+                  <img draggable={false} key={index} alt="" src={item.description} className = ""/>
+                </div>
+            </div>
         ))}
       </div>
       </>)}

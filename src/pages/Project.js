@@ -27,7 +27,7 @@ const Project = ({darkMode, setDarkMode}) => {
                         {hoveredNext? <p>NEXT: {nextProjectItem.title} ✦</p> : <p>NEXT: {nextProjectItem.title} ⟡</p>}
                     </button>
                 </div>
-                <div className = "w-5/6 mx-auto">
+                <div className = "w-5/6 mx-auto bg">
                     <div className = "w-full mx-auto border-b-black border-b-[2px] py-5">
                         <img draggable={false} className ="w-3/4" src={projectItem.titleImg}></img>
                     </div>

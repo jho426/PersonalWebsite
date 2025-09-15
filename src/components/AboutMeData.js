@@ -10,11 +10,11 @@ const AboutMeData = [
     },
     {
         category: "TV shows",
-        data: ["Modern Family, Grey's Anatomy, Queen's Gambit, Criminal Minds"]
+        data: ["Only Murders In The Building, Modern Family, Grey's Anatomy, Queen's Gambit"]
     },
     {
         category: "Hobbies",
-        data: ["Thrifting, Cafe-hopping, Trying out new Recipes"]
+        data: ["Thrifting, Cafe-hopping, Trying out new Recipes, Pilates"]
     }
 
 

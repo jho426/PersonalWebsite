@@ -1,5 +1,37 @@
 const ExperienceData = [
   {
+    title: "Pinterest",
+    position: "Software Engineer Intern",
+    date: "May 2025 – Aug 2025",
+    description:
+      "Pinterest is a visual discovery engine that helps people find ideas and inspiration for their interests and hobbies.",
+    descriptionText: [
+      "Built end-to-end Buildkite pipelines to orchestrate parallel test runs, ingest logs, and publish results, using YAM",
+      "Deployed an AI-powered analysis platform to provide insights in test logs and results, using Typescript + Next.js",
+      "Implemented OpenAI function calling to retrieve external API data and provide enriched context to the LLM",
+      "Created Python and Bash automation scripts to optimize critical CI/CD workflows, reducing build times by 50%"
+      ],
+      showDropDown: false,
+      tools: ["Python", "Next.js", "Bash", "CI/CD", "OpenAI", "TypeScript"],
+      link: "https://ca.pinterest.com/",
+  },
+  {
+    title: "Pinterest",
+    position: "Software Engineer Intern",
+    date: "Sep 2024 – Dec 2024",
+    description:
+      "Pinterest is a visual discovery engine that helps people find ideas and inspiration for their interests and hobbies.",
+    descriptionText: [
+      "Built a production code‑generation pipeline to auto-update and commit 300+ files used in the iOS codebase",
+      "Proposed and led the migration of a legacy Apache Thrift tool to Twitter Scrooge, saving $7k/year in infra costs",
+      "Migrated 90+ app-wide data models from Objective-C to Swift, modernizing over 20% of the iOS codebase",
+      "Built a Python tool to remove unused data models across the iOS app, reducing data complexity by 30%"
+      ],
+      showDropDown: false,
+      tools: ["Thrift", "Python", "Bash", "CI/CD", "Swift", "Objective-C"],
+      link: "https://ca.pinterest.com/",
+  },
+  {
     title: "Siemens",
     position: "Software Engineer Intern",
     date: "Jan 2024 – Present",

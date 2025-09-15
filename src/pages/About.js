@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import PersonalImg from "../assets/personal-img.png";
 import FavouriteTitle from "../assets/favourites-title.svg";
+import LifeTitle from "../assets/life-title.svg";
 import AboutTitle from "../assets/about-title.svg";
 import AboutMeData from "../components/AboutMeData";
 const About = ({ darkMode, setDarkMode }) => {
@@ -57,7 +58,7 @@ const About = ({ darkMode, setDarkMode }) => {
                 and a sense of purpose.
                 <br />
                 <br />
-                ✧*･ﾟ I’m deeply committed to improving gender inclusivity in
+                ✧* I'm deeply committed to improving gender inclusivity in
                 tech, especially in addressing issues where technology is used
                 against women. I believe in fostering safe and respectful
                 digital environments where everyone can feel valued and
@@ -75,7 +76,7 @@ const About = ({ darkMode, setDarkMode }) => {
             ></img>
             <p className="w-5/6 text-xl leading-5 md:text-2xl ml-5 md:ml-20 ">
               When i'm not studying or coding away on my computer, you can find
-              me indulging in some of my favourites below! ･ﾟ✧
+              me indulging in some of my favourites below!✧
             </p>
             <div className="w-[90%] flex gap-5 flex-col mx-auto border border-2 py-5 my-5 rounded-3xl border-black">
               {AboutMeData.map((item) => (
