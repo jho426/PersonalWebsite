@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "personal-website-d59b1"
-  }
+    "default": "personal-website-d59b1",
+    "staging": "personal-website-d59b1"
+  },
+  "targets": {},
+  "etags": {}
 }
